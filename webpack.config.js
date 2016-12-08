@@ -112,6 +112,9 @@ module.exports = {
         }, {
             test: /\.gif/,
             loader: 'file'
+        }, {
+            test: /\.js$/,
+            loader: 'uglify'
         }]
     },
     plugins: plugins,

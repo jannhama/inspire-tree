@@ -11,7 +11,7 @@ accepts@1.1.4:
     mime-types "~2.0.4"
     negotiator "0.4.9"
 
-acorn-jsx@^3.0.0:
+acorn-jsx@^3.0.0, acorn-jsx@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/acorn-jsx/-/acorn-jsx-3.0.1.tgz#afdf9488fb1ecefc8348f6fb22f464e32a58b36b"
   dependencies:
@@ -354,12 +354,26 @@ babel-plugin-check-es2015-constants@^6.3.13:
   dependencies:
     babel-runtime "^6.0.0"
 
+babel-plugin-inferno@beta12:
+  version "1.2.0-beta12"
+  resolved "https://registry.yarnpkg.com/babel-plugin-inferno/-/babel-plugin-inferno-1.2.0-beta12.tgz#2ba46a11ba402438622940b85818dabe49adae95"
+  dependencies:
+    babel-plugin-syntax-jsx "^6.18.0"
+
 babel-plugin-lodash@^3.2.0:
   version "3.2.9"
   resolved "https://registry.yarnpkg.com/babel-plugin-lodash/-/babel-plugin-lodash-3.2.9.tgz#062f85aa7810fbb4374a1a7372ecc44b09168760"
   dependencies:
     glob "^7.0.6"
     lodash "^4.15.0"
+
+babel-plugin-syntax-jsx@^6.18.0:
+  version "6.18.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
+
+babel-plugin-syntax-object-rest-spread@^6.8.0:
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz#fd6536f2bce13836ffa3a5458c4903a597bb3bf5"
 
 babel-plugin-transform-builtin-extend@^1.1.0:
   version "1.1.0"
@@ -536,6 +550,13 @@ babel-plugin-transform-es2015-unicode-regex@^6.3.13:
     babel-helper-regex "^6.8.0"
     babel-runtime "^6.0.0"
     regexpu-core "^2.0.0"
+
+babel-plugin-transform-object-rest-spread:
+  version "6.19.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.19.0.tgz#f6ac428ee3cb4c6aa00943ed1422ce813603b34c"
+  dependencies:
+    babel-plugin-syntax-object-rest-spread "^6.8.0"
+    babel-runtime "^6.0.0"
 
 babel-plugin-transform-regenerator@^6.16.0:
   version "6.16.1"
@@ -1435,6 +1456,10 @@ es5-ext@^0.10.7, es5-ext@^0.10.8, es5-ext@~0.10.11, es5-ext@~0.10.2, es5-ext@~0.
     es6-iterator "2"
     es6-symbol "~3.1"
 
+es5-shim@~4.5.8:
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/es5-shim/-/es5-shim-4.5.9.tgz#2a1e2b9e583ff5fed0c20a3ee2cbf3f75230a5c0"
+
 es6-iterator@2:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.0.tgz#bd968567d61635e33c0b80727613c9cb4b096bac"
@@ -1467,6 +1492,10 @@ es6-set@~0.1.3:
     es6-iterator "2"
     es6-symbol "3"
     event-emitter "~0.3.4"
+
+es6-shim@~0.35.0:
+  version "0.35.2"
+  resolved "https://registry.yarnpkg.com/es6-shim/-/es6-shim-0.35.2.tgz#45c5b3eb2f792ed28f130d826239be50affb897f"
 
 es6-symbol@^3.0.2, es6-symbol@~3.1, es6-symbol@~3.1.0, es6-symbol@3:
   version "3.1.0"
@@ -1511,6 +1540,13 @@ escope@^3.6.0:
     es6-weak-map "^2.0.1"
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
+
+eslint-plugin-inferno:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-inferno/-/eslint-plugin-inferno-6.6.0.tgz#315472ad797a02ed68e35aa08280239434ae4496"
+  dependencies:
+    doctrine "^1.2.2"
+    jsx-ast-utils "^1.3.3"
 
 eslint@^3.10.2:
   version "3.10.2"
@@ -2151,6 +2187,32 @@ individual@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/individual/-/individual-3.0.0.tgz#e7ca4f85f8957b018734f285750dc22ec2f9862d"
 
+inferno-component@beta23:
+  version "1.0.0-beta23"
+  resolved "https://registry.yarnpkg.com/inferno-component/-/inferno-component-1.0.0-beta23.tgz#0b06e3be2a0fe078205da5504fb460b06ae9f3f9"
+  dependencies:
+    inferno "1.0.0-beta23"
+
+inferno-hyperscript@beta23:
+  version "1.0.0-beta23"
+  resolved "https://registry.yarnpkg.com/inferno-hyperscript/-/inferno-hyperscript-1.0.0-beta23.tgz#58014160464b894d4e32c77867bbabc8c018b8fe"
+  dependencies:
+    inferno "1.0.0-beta23"
+
+inferno-vnode-flags:
+  version "1.0.0-beta8"
+  resolved "https://registry.yarnpkg.com/inferno-vnode-flags/-/inferno-vnode-flags-1.0.0-beta8.tgz#ff9b9f79dbba44e3ac77f1a6a199ef0da0e6ae1e"
+  dependencies:
+    inferno "1.0.0-beta8"
+
+inferno@1.0.0-beta23, inferno@beta23:
+  version "1.0.0-beta23"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.0.0-beta23.tgz#d7103d8dfbd2ed7f1799846893bba97bc5119cd6"
+
+inferno@1.0.0-beta8:
+  version "1.0.0-beta8"
+  resolved "https://registry.yarnpkg.com/inferno/-/inferno-1.0.0-beta8.tgz#b3531df95c782ac869e708df9dc8d25426b041e1"
+
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -2486,6 +2548,13 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
+jsx-ast-utils@^1.3.3:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-1.3.4.tgz#0257ed1cc4b1e65b39d7d9940f9fb4f20f7ba0a9"
+  dependencies:
+    acorn-jsx "^3.0.1"
+    object-assign "^4.1.0"
+
 karma-chai-plugins@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/karma-chai-plugins/-/karma-chai-plugins-0.8.0.tgz#e18374e79b628dadbbaba177ed348d130879f68d"
@@ -2507,6 +2576,13 @@ karma-coverage@^1.0.0:
     lodash "^3.8.0"
     minimatch "^3.0.0"
     source-map "^0.5.1"
+
+karma-es6-shim:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/karma-es6-shim/-/karma-es6-shim-1.0.0.tgz#aaeb530862bcf79340ebd588f4f9e57de842b479"
+  dependencies:
+    es5-shim "~4.5.8"
+    es6-shim "~0.35.0"
 
 karma-mocha-reporter@^2.0.0:
   version "2.2.1"
@@ -4454,7 +4530,7 @@ verror@1.3.6:
   dependencies:
     extsprintf "1.0.2"
 
-virtual-dom@^2.1.1:
+virtual-dom:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/virtual-dom/-/virtual-dom-2.1.1.tgz#80eda2d481b9ede0c049118cefcb4a05f21d1375"
   dependencies:
