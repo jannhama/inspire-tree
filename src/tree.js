@@ -808,7 +808,7 @@ export default class InspireTree extends EventEmitter2 {
     }
 
     /**
-     * Query for all soft-removed nodes.
+     * Removes a direct descendant node.
      *
      * @category Tree
      * @param {TreeNode} node Node object.
