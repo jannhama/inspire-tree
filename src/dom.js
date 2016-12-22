@@ -6,7 +6,6 @@ import { create as createElement, diff, h, patch } from 'virtual-dom';
 import { DOMReference } from './lib/DOMReference';
 import { VCache } from './lib/VCache';
 import { VArrayDirtyCompare } from './lib/VArrayDirtyCompare';
-import { VDirtyCompare } from './lib/VDirtyCompare';
 import { VStateCompare } from './lib/VStateCompare';
 
 /**
@@ -385,8 +384,9 @@ export default class InspireDOM {
         var dom = this;
 
         return new VCache({
-            dirty: node.itree.dirty
-        }, VDirtyCompare, function() {
+            dirty: node.itree.dirty,
+            text: node.text
+        }, VStateCompare, function() {
             var attributes = node.itree.li.attributes || {};
             node.itree.ref = new DOMReference();
 
@@ -680,7 +680,8 @@ export default class InspireDOM {
             editing: node.editing(),
             hasVisibleChildren: hasVisibleChildren,
             indeterminate: node.indeterminate(),
-            selected: node.selected()
+            selected: node.selected(),
+            text: node.text
         }, VStateCompare, function() {
             var contents = [];
 

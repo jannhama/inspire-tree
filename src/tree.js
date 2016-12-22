@@ -808,6 +808,17 @@ export default class InspireTree extends EventEmitter2 {
     }
 
     /**
+     * Query for all soft-removed nodes.
+     *
+     * @category Tree
+     * @param {TreeNode} node Node object.
+     * @return {TreeNodes} Array of node objects.
+     */
+    remove() {
+        return map(this, 'remove', arguments);
+    }
+
+    /**
      * Removes all nodes.
      *
      * @category Tree
